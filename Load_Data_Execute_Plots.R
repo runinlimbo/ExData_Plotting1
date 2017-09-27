@@ -71,16 +71,25 @@ apply(HP_PLOTS, 1, function(x) which(x=="?"))
 
 # Fork and Clone the following GitHub 
 # repository: https://github.com/rdpeng/ExData_Plotting1
+setwd("~/Documents/DataScience/Course 4/Programming Assignment 1")
 
 # For each plot (1-4), a separate R code is created.  
 par(mfrow = c(1,1)) # 1 plot
 # Global Active Power Utilization
+png("plot1.png", width=480, height=480, res=120)
 plot1(HP_PLOTS)
+dev.off()
 # Global Active Powwer vs. Time
+png("plot2.png", width=480, height=480, res=120)
 plot2(HP_PLOTS, HP_PLOTS$Global_active_power,"Global Active Power (Kilowatts)")
+dev.off()
 # Energy Sub Metering Category vs. Time
+png("plot3.png", width=480, height=480, res=120)
 plot3(HP_PLOTS)
+dev.off()
 # Multiple Base Plots: Creates 4 plots
 # 1) Global Active Power vs. Time; 2) Voltage vs. Time;
 # 3) Energy Sub Metering Category vs. Time; 4) Global Reactive Power vs. Time
+png("plot4.png", width=480, height=480, res=120)
 plot4(HP_PLOTS)
+dev.off()
