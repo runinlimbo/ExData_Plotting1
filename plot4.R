@@ -1,5 +1,8 @@
 # Making Plots: Multiple Base Plots
-
+#
+# DATA IMPORT, EXECUTION OF PLOT, & CREATION OF PNG FILE IN 
+# LOAD_DATA_EXECUTE_PLOTS.R
+#
 # Our overall goal here is simply to examine how household
 # energy usage varies over a 2-day period in February, 2007. 
 # Your task is to reconstruct the following plots below, all 
@@ -19,9 +22,3 @@ plot3(HP_PLOTS)
 plot2(HP_PLOTS, HP_PLOTS$Global_reactive_power,"Global Reactive Power")
 
 }
-#with(airquality, {
-#  plot(Wind, Ozone, main = "Ozone and Wind")
-#  plot(Solar.R, Ozone, main = "Ozone and Solar Radiation")
-#  plot(Temp, Ozone, main = "Ozone and Temperature")
-#  mtext("Ozone and Weather in New York City", outer = TRUE)
-#})
